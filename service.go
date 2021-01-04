@@ -12,6 +12,8 @@ func main(){
 	//}
 	{
 		g.Handle("GET","",Funs.Loadbook)
+		g.Handle("GET","/press/:press",Funs.Loadbookbypress)
+
 	}
 
 	roter.Run()
